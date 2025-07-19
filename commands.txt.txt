@@ -1,0 +1,12 @@
+
+# Run for pre recorded video
+python object_tracker.py --video ./data/video/your_videomp4 --output ./outputs/your_video_output.mp4 --count --info
+
+# Run with webcam
+python object_tracker.py --video 0 --output webcam_output.mp4 --count
+
+# Run with YOLOv4-tiny for speed
+python object_tracker.py --video ./data/video/cars.mp4 --output cars_output.mp4 --tiny --count
+
+# Run with custom settings
+python object_tracker.py --video ./data/video/video.mp4 --output custom_output.mp4 --size 320 --score 0.6
